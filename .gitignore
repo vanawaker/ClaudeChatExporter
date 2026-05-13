@@ -1,0 +1,16 @@
+# Build artifacts
+dist/
+*.xpi
+
+# macOS
+.DS_Store
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Future tooling
+node_modules/
+package-lock.json
+yarn.lock
