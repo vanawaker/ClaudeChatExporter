@@ -14,13 +14,15 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://claude.ai/chat/*",
-        "https://claude.ai/chats/*",
-        "https://claude.ai/project/*"
-      ],
+      "matches": ["https://claude.ai/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/icon-128.png"],
+      "matches": ["https://claude.ai/*"]
     }
   ],
   "browser_specific_settings": {
