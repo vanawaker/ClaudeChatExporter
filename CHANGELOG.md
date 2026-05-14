@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-05-14
+
+### Changed
+- Export button redesigned: replaced the orange text pill with an icon-only button anchored directly below Claude.ai's share button, inheriting its size and corner radius. Falls back to a fixed top-right position when no share button is present.
+- All user-facing strings (button label, alert copy, `.txt` header) localized to English (`Claude Conversation Export`, `Exported · ...`).
+- Extension ID renamed from `claude-chat-exporter@vanawaker` to `ClaudeChatExporter@vanawaker` to match the (also renamed) GitHub repo. Safe to do at this point because nothing has been signed or published yet.
+- `content_scripts.matches` broadened to `https://claude.ai/*`. Fixes the "had to refresh to see the button" problem: SPA navigation does not re-inject content scripts, so the script now stays loaded across in-app routing.
+
+### Added
+- Path whitelist (`/new`, `/chat/*`, `/chats/*`, `/project/*`) — the export button only appears on actual conversation pages, not on `/code/*`, settings, login, or other routes.
+- Content gate: button stays hidden until either a share button or a message node exists, so an empty `/new` page no longer shows a useless export icon.
+- `web_accessible_resources` declaration so the content script can load the bundled extension icon into the page.
+- `pageshow` listener for BFCache restore (browser back/forward) so the button is re-checked after history navigation.
+- `requestAnimationFrame` throttling on the MutationObserver to keep CPU flat during Claude's streaming responses.
+
+### Fixed
+- Stale button position when the share button temporarily disappears during SPA route transitions. The button now falls back to its default top-right position instead of holding the last computed coordinates (which could land off-screen).
+
 ## [0.4.0] - 2026-05-12
 
 ### Added
