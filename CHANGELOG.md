@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.2] - 2026-05-14
+
+### Changed
+- `strict_min_version` raised from `115.0` to `140.0`. Aligns with the Firefox version that introduced support for the `data_collection_permissions` manifest key added in 0.5.1; eliminates the AMO submission warning about the field being unsupported on older Firefox. Users below Firefox 140 will no longer be able to install — practically no impact since stable Firefox is well past 140 by now.
+
 ## [0.5.1] - 2026-05-14
 
 ### Added

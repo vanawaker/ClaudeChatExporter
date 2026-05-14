@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Claude Chat Exporter",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Export a Claude.ai conversation to a nicely-formatted .txt file.",
   "author": "vanawaker",
   "homepage_url": "https://github.com/vanawaker/ClaudeChatExporter",
@@ -28,7 +28,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "ClaudeChatExporter@vanawaker",
-      "strict_min_version": "115.0",
+      "strict_min_version": "140.0",
       "data_collection_permissions": {
         "required": ["none"]
       }
