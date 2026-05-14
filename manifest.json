@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Claude Chat Exporter",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Export a Claude.ai conversation to a nicely-formatted .txt file.",
   "author": "vanawaker",
   "homepage_url": "https://github.com/vanawaker/ClaudeChatExporter",
