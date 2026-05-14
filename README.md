@@ -109,7 +109,7 @@ If the export button finds no messages, open DevTools (F12) → Console and run:
 cceDebug()
 ```
 
-It prints selector hit counts and a reference to the first matched node. If both counts are 0 on a real conversation page, the DOM contract has changed — please [open an issue](https://github.com/vanawaker/claude-chat-exporter/issues) with the console output.
+It prints selector hit counts and a reference to the first matched node. If both counts are 0 on a real conversation page, the DOM contract has changed — please [open an issue](https://github.com/vanawaker/ClaudeChatExporter/issues) with the console output.
 
 ## License
 

@@ -153,7 +153,7 @@
     const pairs = collectMessages();
     if (!pairs.length) {
       console.warn('[CCE] no messages found. Run cceDebug() to diagnose.');
-      alert('Claude Chat Exporter: no messages found.\nOpen DevTools Console, run cceDebug(), and paste the output into a new issue:\nhttps://github.com/vanawaker/claude-chat-exporter/issues');
+      alert('Claude Chat Exporter: no messages found.\nOpen DevTools Console, run cceDebug(), and paste the output into a new issue:\nhttps://github.com/vanawaker/ClaudeChatExporter/issues');
       return;
     }
 
