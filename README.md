@@ -23,7 +23,7 @@ Clicking it downloads a plain-text `.txt` file with speaker-labelled sections:
 - **Speaker separation** — Each turn is wrapped in a Unicode box labeled `USER` or `ASSISTANT`, easy to scan.
 - **Code preserved** — Fenced code blocks are kept with 4-space indentation for monospace readability.
 - **No data collection** — Everything happens in your browser. Nothing is uploaded.
-- **Tiny footprint** — A single content script (~230 lines), no background page, no remote dependencies.
+- **Tiny footprint** — A single content script (~330 lines), no background page, no remote dependencies.
 
 ## Sample output
 
@@ -66,10 +66,10 @@ Temporary add-ons are removed when Firefox restarts.
 
 ### Permanent
 
-Submission to [addons.mozilla.org](https://addons.mozilla.org) is planned but not yet listed. Until then you have two options:
+Two paths — pick whichever:
 
-- **Sign it for yourself.** Submit the `.xpi` as an [unlisted self-distribution build](https://extensionworkshop.com/documentation/publish/self-distribution/) on AMO and install the signed artifact you receive back. This is the only path that works on stable Firefox releases without flipping any flags.
-- **Sideload an unsigned `.xpi`.** Only works on Firefox **Developer Edition**, **Nightly**, **ESR**, or **Unbranded** builds — these are the only releases that honour `xpinstall.signatures.required = false` in `about:config`. Stable Firefox enforces signature checks unconditionally and will refuse to load unsigned add-ons.
+- **From GitHub Releases (signed, available now)** — Download the latest `.xpi` from the [releases page](https://github.com/vanawaker/ClaudeChatExporter/releases). Drag it onto a Firefox window, or open `about:addons` → ⚙️ → **Install Add-on From File…**. The release builds are Mozilla-signed, so they install on stable Firefox 140+ with no `about:config` flags.
+- **From the Mozilla Add-on store (one-click, pending review)** — Listed submission to [addons.mozilla.org](https://addons.mozilla.org) is currently under review. Once approved, you'll be able to find and install the extension via Firefox's built-in add-on browser. This README will be updated with the store URL when it goes live.
 
 ## Building from source
 
