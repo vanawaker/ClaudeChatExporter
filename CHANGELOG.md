@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `README.md`, `LICENSE` (MIT), `CHANGELOG.md`, and `.gitignore`.
 
 ### Changed
-- Extension ID (`browser_specific_settings.gecko.id`) set to `claude-chat-exporter@vanawaker` for the public release (was a local-only placeholder during private development).
+- Extension ID (`browser_specific_settings.gecko.id`) set to `ClaudeChatExporter@vanawaker` for the public release (was a local-only placeholder during private development).
 - "No messages found" alert now links to the GitHub issues page.
 
 ## [0.3.1] - 2026-05-11
