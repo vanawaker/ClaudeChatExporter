@@ -2,7 +2,7 @@
 
 <img src="icons/icon-128.png" alt="Claude Chat Exporter icon" width="96" align="right">
 
-A minimal Firefox extension that adds a button to [Claude.ai](https://claude.ai) for exporting the current conversation to a plain-text `.txt` file.
+A minimal browser extension (Firefox + Chrome) that adds a button to [Claude.ai](https://claude.ai) for exporting the current conversation to a plain-text `.txt` file.
 
 > ⚠️ This is an unofficial third-party extension. Not affiliated with, endorsed by, or sponsored by Anthropic. "Claude" is a trademark of Anthropic PBC.
 
@@ -70,7 +70,7 @@ Three paths — pick whichever fits your browser:
 
 - **Firefox — From GitHub Releases (signed, available now)** — Download the latest `.xpi` from the [releases page](https://github.com/vanawaker/ClaudeChatExporter/releases). Drag it onto a Firefox window, or open `about:addons` → ⚙️ → **Install Add-on From File…**. The release builds are Mozilla-signed, so they install on stable Firefox 140+ with no `about:config` flags.
 - **Firefox — From the Mozilla Add-on store (pending review)** — Listed submission to [addons.mozilla.org](https://addons.mozilla.org) is currently under review. Once approved, you'll be able to find and install the extension via Firefox's built-in add-on browser. This README will be updated with the store URL when it goes live.
-- **Chrome / Chromium-based — From the Chrome Web Store (pending review)** — Listed submission to the [Chrome Web Store](https://chrome.google.com/webstore) is currently under review. This README will be updated with the store URL when it goes live. Chrome does not support `.crx` / `.zip` sideloading on stable releases, so the store is the only practical install path for regular users.
+- **Chrome / Chromium-based — From the [Chrome Web Store](https://chromewebstore.google.com/detail/claude-chat-exporter/bajkiaeejjpojiihppapoobnimcleimm)** — One-click install. Works on Chrome, Edge, Brave, Vivaldi, and any Chromium-based browser that accepts CWS extensions.
 
 ## Building from source
 
