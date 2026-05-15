@@ -86,7 +86,7 @@ No build tools, no dependencies. The `.xpi` is just a zip containing `manifest.j
 | Browser | Status |
 |---|---|
 | Firefox 140+ | Tested |
-| Chrome | Untested — likely works (same MV3 manifest; Chrome ignores the `browser_specific_settings.gecko` block) |
+| Chrome (latest stable) | Tested — same content script, same MV3 manifest, no code changes needed |
 
 ## Limitations
 
