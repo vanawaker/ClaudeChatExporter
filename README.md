@@ -69,7 +69,7 @@ Temporary add-ons are removed when Firefox restarts.
 Three paths — pick whichever fits your browser:
 
 - **Firefox — From GitHub Releases (signed, available now)** — Download the latest `.xpi` from the [releases page](https://github.com/vanawaker/ClaudeChatExporter/releases). Drag it onto a Firefox window, or open `about:addons` → ⚙️ → **Install Add-on From File…**. The release builds are Mozilla-signed, so they install on stable Firefox 140+ with no `about:config` flags.
-- **Firefox — From the Mozilla Add-on store (pending review)** — Listed submission to [addons.mozilla.org](https://addons.mozilla.org) is currently under review. Once approved, you'll be able to find and install the extension via Firefox's built-in add-on browser. This README will be updated with the store URL when it goes live.
+- **Firefox — From the Mozilla Add-on store** — One-click install from [addons.mozilla.org/addon/claudechatexporter](https://addons.mozilla.org/addon/claudechatexporter/). Updates automatically when new versions are published.
 - **Chrome / Chromium-based — From the [Chrome Web Store](https://chromewebstore.google.com/detail/claude-chat-exporter/bajkiaeejjpojiihppapoobnimcleimm)** — One-click install. Works on Chrome, Edge, Brave, Vivaldi, and any Chromium-based browser that accepts CWS extensions.
 
 ## Building from source
